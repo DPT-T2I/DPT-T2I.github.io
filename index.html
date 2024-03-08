@@ -22,7 +22,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
-  <link rel="icon" href="./static/images/layout.png">
+  <link rel="icon" href="./static/images/logo.png">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
@@ -227,7 +227,7 @@
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
 
     <div class="columns is-centered">
@@ -255,7 +255,7 @@
         <br/>
 
       </div>
-    </div>
+    </div> -->
 
     <!-- Framework -->
     <div class="columns is-centered">
@@ -263,7 +263,7 @@
         <h2 class="title is-3">Framework</h2>
 
         <div class="content has-text-justified">
-          <p>
+          <!-- <p>
             In Figure 2, we illustrate the overall architecture of the proposed layout-guided diffusion model, consisting of two modules:
             <ol>
               <li>
@@ -273,7 +273,7 @@
                 <b>Layout-guided image generation module</b> synthesizes the final image based on the prompt and the generated layout, .
               </li>
             </ol>
-          </p>
+          </p> -->
           <img class="columns is-centered has-text-centered" src="./static/images/framework.png" alt="Teaser" width="100%" style="margin:0 auto">
         </div>
         <br/>
@@ -286,23 +286,26 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Generated Images</h2>
 
-        <h3 class="title is-4">Examples: Spatial, Semantic</h3>
+        <h3 class="title is-4">Qualitative results on COCO-NSS1K.</h3>
         <div class="content has-text-justified">
           <p>
-            Results on the <strong>Spatial</strong>, and <strong>Semantic</strong> inputs.
-            The ground-truth (GT) image, the ground-truth layout with the generated image (GT*), the layout generated from LayoutDM, and our results for each prompt are shown from left to right.
+            We compare DPT with SD-v2.1 and two baselines including Attend-and-Excite
+            (AaE) and HN-DiffusionITM (HN-DiffITM) regarding
+            object appearance, counting, spatial relation, semantic relation,
+            and compositional reasoning. Categories and the corresponding
+            keywords in prompts are highlighted with different colors.
           </p>
-          <img src="./static/images/case-4.jpg" alt="Teaser" width="100%">
+          <img src="./static/images/case_nss1k.png" alt="Teaser" width="100%">
         </div>
 
-        <h3 class="title is-4">Examples: Numerical, Mixed, Null</h3>
+        <!-- <h3 class="title is-4">Examples: Numerical, Mixed, Null</h3>
         <div class="content has-text-justified">
           <p>
             Results on the <strong>Numerical</strong>, <strong>Mixed</strong>, and <strong>Null</strong> inputs.
           </p>
           <img src="./static/images/case-3.jpg" alt="Teaser" width="100%">
         </div>
-        <br/>
+        <br/> -->
 
 
 
@@ -310,7 +313,7 @@
     </div>
 
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -322,19 +325,19 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 </section>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{qu2023layoutllm,
-  title={LayoutLLM-T2I: Eliciting Layout Guidance from LLM for Text-to-Image Generation},
-  author={Leigang Qu, Shengqiong Wu, Hao Fei, Liqiang Nie, Tat-Seng Chua},
-  journal={Proceedings of the {ACM} International Conference on Multimedia},
-  year={2023}
-}
+    <pre><code>@article{qu2024discriminative,
+      title={Discriminative Probing and Tuning for Text-to-Image Generation},
+      Qu, Leigang Qu and Wang, Wenjie and Li, Yongqi and Zhang, Hanwang and Nie, Liqiang and Chua, Tat-Seng}, 
+      journal={arXiv preprint arXiv:2403.04321},
+      year={2024}
+    }
 </code></pre>
   </div>
 </section>
