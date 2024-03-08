@@ -258,23 +258,27 @@
     </div> -->
 
     <!-- Framework -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-justified">
+      <!-- <div class="column is-full-width"> -->
+      <div class="column is-three-fifths">
         <h2 class="title is-3">Framework</h2>
 
         <div class="content has-text-justified">
-          <!-- <p>
-            In Figure 2, we illustrate the overall architecture of the proposed layout-guided diffusion model, consisting of two modules:
-            <ol>
+          <p>
+            Schematic illustration of the proposed <b>discriminative probing and tuning (DPT) </b> framework. We first extract semantic representations
+            from the frozen SD and then propose a discriminative adapter to conduct discriminative probing to investigate the global matching
+            and local grounding abilities of SD. Afterward, we perform parameter-efficient discriminative tuning by introducing LoRA parameters.
+            During inference, we present the self-correction mechanism to guide the denoising-based text-to-image generation.
+            <!-- <ol>
               <li>
                 <b>Text-to-layout induction module</b> infers a coarse-grained layout via an LLM conditioned the given textual prompt.
               </li>
               <li>
                 <b>Layout-guided image generation module</b> synthesizes the final image based on the prompt and the generated layout, .
               </li>
-            </ol>
-          </p> -->
-          <img class="columns is-centered has-text-centered" src="./static/images/framework.png" alt="Teaser" width="100%" style="margin:0 auto">
+            </ol> -->
+          </p>
+          <img class="columns is-centered has-text-justified" src="./static/images/framework.png" alt="Teaser" width="100%" style="margin:0 auto">
         </div>
         <br/>
 
@@ -282,8 +286,10 @@
     </div>
 
 
-    <div class="columns is-centered">
-      <div class="column is-full-width">
+    <div class="columns is-centered has-text-justified">
+      <!-- <div class="column is-four-fifths"> -->
+      <!-- <div class="column is-full-width"> -->
+      <div class="column is-three-fifths">
         <h2 class="title is-3">Generated Images</h2>
 
         <h3 class="title is-4">Qualitative results on COCO-NSS1K.</h3>
@@ -295,8 +301,31 @@
             and compositional reasoning. Categories and the corresponding
             keywords in prompts are highlighted with different colors.
           </p>
-          <img src="./static/images/case_nss1k.png" alt="Teaser" width="100%">
+          <img class="columns is-centered has-text-centered" src="./static/images/case_nss1k.png" alt="Teaser" width="100%" style="margin:0 auto">
         </div>
+
+
+          <h3 class="title is-4">Qualitative results on CC-500.</h3>
+          <div class="content has-text-justified">
+            <p>
+              Qualitative results on CC-500. We compare the proposed
+              method with SD-v1.4 and two baselines including StructureDiffusion and Attend-and-Excite (AaE) regarding object
+              appearance and attribute characterizing.
+            </p>
+            <img class="columns is-centered has-text-centered" src="./static/images/case_cc500.png" alt="Teaser" width="100%" style="margin:0 auto">
+          </div>
+
+
+            <h3 class="title is-4">Qualitative results on ABC-6K.</h3>
+            <div class="content has-text-justified">
+              <p>
+                Qualitative results on ABC-6K. We compare the proposed
+                method with SD-v1.4 and two baselines including StructureDiffusion and Attend-and-Excite (AaE) regarding color attribute
+                characterizing.
+              </p>
+              <img class="columns is-centered has-text-centered" src="./static/images/case_abc-6k.png" alt="Teaser" width="100%" style="margin:0 auto">
+            </div>
+  
 
         <!-- <h3 class="title is-4">Examples: Numerical, Mixed, Null</h3>
         <div class="content has-text-justified">
@@ -356,6 +385,7 @@
     </div>
   </div>
 </footer>
+
 
 </body>
 </html>
