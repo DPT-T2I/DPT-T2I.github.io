@@ -88,7 +88,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2308.05095.pdf"
+                <a href="https://arxiv.org/abs/2403.04321"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -98,7 +98,7 @@
               </span>
 
               <span class="link-block">
-                <a href="https://huggingface.co/spaces/xxxx/LayoutLLM-T2I" target="_blank"
+                <a href="https://huggingface.co/" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fa fa-laugh"></i>
@@ -120,7 +120,7 @@
 
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/LayoutLLM-T2I/LayoutLLM-T2I"
+                <a href="https://github.com/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -130,7 +130,7 @@
               </span>
 
               
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://github.com/LayoutLLM-T2I/LayoutLLM-T2I" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -138,7 +138,7 @@
                   </span>
                   <span>Dataset</span>
                   </a>
-              </span>
+              </span> -->
               
       
 <!--               <span class="link-block">
@@ -197,18 +197,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            In the text-to-image generation field, recent remarkable progress in Stable Diffusion makes it possible to generate rich kinds of novel photorealistic images.
-            However, current models still face misalignment issues (<em>e.g.</em>, problematic spatial relation understanding and numeration failure) in complex natural scenes, which impedes the high-faithfulness text-to-image generation.
-            Although recent efforts have been made to improve controllability by giving fine-grained guidance (<em>e.g.</em>, sketch and scribbles), this issue has not been fundamentally tackled since users have to provide such guidance information manually.
-
+            Despite advancements in text-to-image generation (T2I), prior methods often face text-image misalignment problems such as relation confusion in generated images. Existing solutions involve cross-attention manipulation for better compositional understanding or integrating large language models for improved layout planning. However, the inherent alignment capabilities of T2I models are still inadequate. By reviewing the link between generative and discriminative modeling, we posit that T2I models' discriminative abilities may reflect their text-image alignment proficiency during generation. In this light, we advocate bolstering the discriminative abilities of T2I models to achieve more precise text-to-image alignment for generation. We present a discriminative adapter built on T2I models to probe their discriminative abilities on two representative tasks and leverage discriminative fine-tuning to improve their text-image alignment. As a bonus of the discriminative adapter, a self-correction mechanism can leverage discriminative gradients to better align generated images to text prompts during inference. Comprehensive evaluations across three benchmark datasets, including both in-distribution and out-of-distribution scenarios, demonstrate our method's superior generation performance. Meanwhile, it achieves state-of-the-art discriminative performance on the two discriminative tasks compared to other generative models.
           </p>
-          <p>
+          <!-- <p>
             In this work, we strive to synthesize high-fidelity images that are semantically aligned with a given textual prompt without any guidance.
             Toward this end, we propose a coarse-to-fine paradigm to achieve layout planning and image generation.
             Concretely, we first generate the coarse-grained layout conditioned on a given textual prompt via in-context learning based on Large Language Models.
             Afterward, we propose a fine-grained object-interaction diffusion method to synthesize high-faithfulness images conditioned on the prompt and the automatically generated layout.
             Extensive experiments demonstrate that our proposed method outperforms the state-of-the-art models in terms of cross-modal text-layout alignment and high-faithfulness image generation.
-          </p>
+          </p> -->
 
         </div>
       </div>
